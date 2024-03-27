@@ -10,17 +10,19 @@ const data = {
 export default function Intro() {
   return (
     <>
+  
     <div 
-    className="flex items-start justify-between 
+    className="flex items-start justify-evenly
               bg-auto 
               bg-lime-400/80
+              p-6
               "
     >
 
     <Profile />
     <ProfileInto data ={data} />
     </div>
-     
+    
     </>
   );
 }
@@ -31,7 +33,10 @@ function Profile() {
       <img src="https://i.imgur.com/tuWbDiR.png" 
             alt="Profile pic" 
             className="rounded-full
-            w-24 h-24 md:w-32 md:h-32 lg:w-48 lg:h-48"
+            p-4
+            w-24 h-24 md:w-32 md:h-32 lg:w-48 lg:h-48
+            hover:scale-105 transition-transform duration-300 ease-in-out
+            "
       />
     </div>
   );
@@ -40,12 +45,18 @@ function Profile() {
 function ProfileInto( {data}){
   return(
     <>
-    <div className="font-mono">
-        <h6 className="font-mono ">{data.Name}</h6>
-        <p >
+    <div className="font-mono
+                    p-4
+                    hover:scale-105 transition-transform duration-300 ease-in-out
+                    
+                    "
+
+    >
+        <h6 className=" font-bold">{data.Name}</h6>
+        <p className="max-w-md mx-auto" >
           {data.Bio}
         </p>
-        <ul >
+        <ul className="flex  ">
           <li>Key Skill 1</li>
           <li>Key Skill 2</li>
           <li>Key Skill 3</li>
