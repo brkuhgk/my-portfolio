@@ -1,15 +1,20 @@
 const data = {
   Name: "karthik",
+  Img :"https://i.imgur.com/tuWbDiR.png",
   Bio: "I am a developer who tries to do stuff as efficiant as possible in least amout of time and come with solution.\n I am not specific to any language I learn and \n do stuff based on recuirement.",
   Skills: [
     "JAVA",
     "JAVASCRIPT",
-    "skill3",
-    "skill4",
-    "skill5",
-    "skill6",
-    "skill7",
-    "skill8",
+    "Python",
+    "SQL",
+    "React JS",
+    "Node JS",
+    "Spring Boot",
+    "Hibernte",
+    "PostgreSQL",
+    "MangoDB",
+    "Amazon AWS",
+    "Docker",
   ],
 };
 
@@ -21,18 +26,18 @@ export default function Intro() {
               px-4 py-2 bg-white rounded-lg shadow-md
               "
       >
-        <Profile />
+        <Profile data={data}/>
         <ProfileInto data={data} />
       </div>
     </>
   );
 }
 
-function Profile() {
+function Profile({data}) {
   return (
     <div>
       <img
-        src="https://i.imgur.com/tuWbDiR.png"
+        src= {data.Img}
         alt="Profile pic"
         className="rounded-full
             p-4
@@ -46,13 +51,14 @@ function Profile() {
 
 function ProfileInto({ data }) {
   return (
+
     <>
       <div
         className="
                     font-mono
                     p-4
                     hover:scale-105 transition-transform duration-300 ease-in-out
-                    w-full max-w-96
+                    w-1/3
                     "
       >
         <h1 className="p-2 text-4xl font-bold">{data.Name}</h1>
