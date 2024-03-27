@@ -10,8 +10,17 @@ const data = {
 export default function Intro() {
   return (
     <>
-      <Profile />
-      <ProfileInto Bio ={data.Bio} />
+    <div 
+    className="flex items-start justify-between 
+              bg-auto 
+              bg-lime-400/80
+              "
+    >
+
+    <Profile />
+    <ProfileInto data ={data} />
+    </div>
+     
     </>
   );
 }
@@ -21,18 +30,20 @@ function Profile() {
     <div>
       <img src="https://i.imgur.com/tuWbDiR.png" 
             alt="Profile pic" 
+            className="rounded-full
+            w-24 h-24 md:w-32 md:h-32 lg:w-48 lg:h-48"
       />
     </div>
   );
 }
 
-function ProfileInto( {Bio}){
+function ProfileInto( {data}){
   return(
     <>
-    <div >
-        <h1 >App Name</h1>
+    <div className="font-mono">
+        <h6 className="font-mono ">{data.Name}</h6>
         <p >
-          {Bio}
+          {data.Bio}
         </p>
         <ul >
           <li>Key Skill 1</li>
