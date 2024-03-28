@@ -1,7 +1,7 @@
 const data = {
   Name: "karthik",
   Img :"https://i.imgur.com/tuWbDiR.png",
-  Bio: "I am a developer who tries to do stuff as efficiant as possible in least amout of time and come with solution.\n I am not specific to any language I learn and \n do stuff based on recuirement.",
+  Bio: "I am a developer who tries to do stuff as efficient as possible in the least amount of time and come with a solution. I am not specific to any language; I learn and do stuff based on requirement.",
   Skills: [
     "JAVA",
     "JAVASCRIPT",
