@@ -15,6 +15,7 @@ const data = {
     "MangoDB",
     "Amazon AWS",
     "Docker",
+    
   ],
 };
 
@@ -35,7 +36,10 @@ export default function Intro() {
 
 function Profile({data}) {
   return (
-    <div>
+    <div className="font-mono
+    p-4
+    hover:scale-105 transition-transform duration-300 ease-in-out
+    w-1/6">
       <img
         src= {data.Img}
         alt="Profile pic"
@@ -45,6 +49,9 @@ function Profile({data}) {
             hover:scale-105 transition-transform duration-300 ease-in-out
             "
       />
+      <div className="p-2 max-w-md mx-auto">
+        Content me
+      </div>
     </div>
   );
 }
