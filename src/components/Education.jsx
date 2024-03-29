@@ -11,7 +11,7 @@ export default function Education() {
   );
 }
 
-function Masters() {
+export function Masters() {
   return (
     <div class="mb-4 ms-4 bg-white rounded-lg shadow-md p-2">
       <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
@@ -33,7 +33,7 @@ function Masters() {
   );
 }
 
-function Batchlers() {
+export function Batchlers() {
   return (
     <div class="mb-4 ms-4 bg-white rounded-lg shadow-md p-2">
       <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
