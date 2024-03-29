@@ -1,6 +1,7 @@
 import Intro from "./components/Intro";
 import Career from "./components/Career";
 import './index.css'
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       
       <Intro />
       <Career />
+      <Projects />
     </div>
   );
 }
