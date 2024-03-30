@@ -23,7 +23,8 @@ const projects = [
 export default function Projects() {
   return (
     <>
-      <div class="flex justify-center">
+      <div class="flex justify-center hover:scale-105 transition-transform duration-300 ease-in-out
+">
         <div class="border-2 border-gray-300 p-4 rounded-lg">
           <h1 class="text-4xl font-bold m-0">Projects</h1>
         </div>
@@ -53,7 +54,7 @@ function FlipCard({ projects }) {
                   src={projects[0].image}
                   alt="Project-IMG"
                   className="rounded-full
-            w-24 h-24 md:w-32 md:h-32 lg:w-48 lg:h-48"
+            w-24 h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 p-1"
                 />
               </div>
 

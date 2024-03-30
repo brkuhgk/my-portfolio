@@ -25,7 +25,7 @@ export function Masters() {
         Masters in Computer Science
       </div>
       <div className="max-w-md mx-auto text-gray-500">
-        <strong className="text-gray-700">CourseWork : </strong>Computer Algorithms & Analysis, Computer
+      ➡️<strong className="text-gray-700">CourseWork : </strong>Computer Algorithms & Analysis, Computer
         Architecture, Software Engineering, Human-Computer Interactn(HCI), Web
         Development, Computer Networks, Machine Learning, Robotics
       </div>
@@ -50,7 +50,7 @@ export function Batchlers() {
         Batchlers of Engineering
       </div>
         <div className="max-w-md mx-auto text-gray-500">
-          <strong className="text-gray-700">CourseWork : </strong> Data Structures & Algorithms, C, JAVA,
+        ➡️<strong className="text-gray-700">CourseWork : </strong> Data Structures & Algorithms, C, JAVA,
           Machine Learning, Compilers
         </div>
       
