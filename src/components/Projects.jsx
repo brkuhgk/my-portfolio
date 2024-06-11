@@ -1,5 +1,5 @@
 import live from "../assests/live.png";
-import githubLogo from "../assests/github_logo.png";
+import githubLogo from "../assests/icons8-github-60.png";
 
 const projects = [
   {
@@ -23,20 +23,12 @@ const projects = [
 export default function Projects() {
   return (
     <>
-      <div class="flex justify-center hover:scale-105 transition-transform duration-300 ease-in-out
-">
-        <div class="border-2 border-gray-300 p-4 rounded-lg">
-          <h1 class="text-4xl font-bold m-0">Projects</h1>
-        </div>
-      </div>
+      <div className="flex flex-wrap items-start justify-center px-4 py-2 rounded-lg shadow-md m-10 bg-gray-200">
+        <Card projects={projects} />
+        <Card projects={projects} />
+        <Card projects={projects} />
+        <Card projects={projects} />
 
-      <div className="flex flex-wrap items-start justify-center px-4 py-2 rounded-lg shadow-md m-10">
-        <Card projects={projects} />
-        <Card projects={projects} />
-        <Card projects={projects} />
-        <Card projects={projects} />
-        <Card projects={projects} />
-        <Card projects={projects} />
       </div>
     </>
   );
@@ -45,11 +37,11 @@ export default function Projects() {
 function FlipCard({ projects }) {
   return (
     <>
-      <div class="bg-grey-900 flex justify-center items-center">
+      <div class="bg-grey-900 flex justify-center items-center bg">
         <div class="w-[300px] h-[310px] bg-transparent cursor-pointer group perspective">
           <div class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
             <div class="absolute backface-hidden border-2 w-full h-auto">
-              <div class="flex justify-center">
+              <div class="flex justify-center ">
                 <img
                   src={projects[0].image}
                   alt="Project-IMG"
@@ -82,18 +74,23 @@ function FlipCard({ projects }) {
 function Card({ projects }) {
   return (
     <>
-      <div className="bg-white rounded-lg shadow-md p-4 m-4">
-        <FlipCard projects={projects} />
-        <div className="flex justify-center space-x-14 p-4">
-          <a href="https://example.com" target="github" class="inline-block">
-            <img src={live} alt="project logo" className="w-[50px] h-[50px]" />
-          </a>
-          <a href="https://example.com" target="github" class="inline-block">
+      <div className="bg-white rounded-lg shadow-md p-2 m-2">
+        <FlipCard projects={projects}/>
+
+        <div className="flex justify-center space-x-10">
+
+          <a href="https://example.com" target="github">
             <img
-              src={githubLogo}
-              alt="project logo"
-              className="w-[50px] h-[50px]"
+                src={githubLogo}
+                alt="project logo"
+                width="50px"
+                height="50px"
+
             />
+          </a>
+          <a href="https://example.com" target="github">
+            <img src={live} alt="project live" width="50px"
+                 height="50px"/>
           </a>
         </div>
       </div>

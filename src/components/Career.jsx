@@ -6,10 +6,11 @@ export default function Career() {
     <>
       <div className="flex items-start justify-center p-4 font-mono">
         <div className="relative border-s border-gray-200 dark:border-gray-700">
-        <Masters />
+          <GraduateAssistance />
+          <MachineLearningIntern />
+          <Masters />
         <Batchlers />
-        <GraduateAssistance />
-        <MachineLearningIntern />
+
 
         </div>
       </div>

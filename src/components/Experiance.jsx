@@ -13,28 +13,28 @@ export default function Experiance() {
 
 export function GraduateAssistance() {
   return (
-    <div class="mb-4 ms-4 bg-white rounded-lg shadow-md p-2">
+    <div class="mb-4 ms-4 bg-white rounded-lg shadow-md p-2 bg-amber-100">
       <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-      <div className="text-sm font-normal text-gray-400 dark:text-gray-500">
+      <div className="text-sm font-normal text-gray-400">
         May 2023 - Jan 2024
       </div>
-      <div className="text-xl font-bold text-gray-900 dark:text-white font">
+      <div className="text-xl font-bold text-gray-900 ">
         <a href="https://www.montclair.edu"> MONTCLAIR CESAC </a>
       </div>
-      <div className="text-lg font-semibold text-gray-700 dark:text-white">
+      <div className="text-lg font-semibold text-gray-700">
         Graduate Student Researcher
       </div>
       <div className="max-w-md mx-auto text-gray-500">
         <ol>
-          <li>
-            ➡️ Utilized Support Vector regression with a radial basis function
-            kernel and forecasted pollutants and predicted the air quality index
-            by 80%
-          </li>
-          <li>
-            ➡️ Full-stack developer- Wrote and reviewed code for JS using React,
-            Node to run the ML model
-          </li>
+          {/*<li>*/}
+          {/*  ➡️ Utilized Support Vector regression with a radial basis function*/}
+          {/*  kernel and forecasted pollutants and predicted the air quality index*/}
+          {/*  by 80%*/}
+          {/*</li>*/}
+          {/*<li>*/}
+          {/*  ➡️ Full-stack developer- Wrote and reviewed code for JS using React,*/}
+          {/*  Node to run the ML model*/}
+          {/*</li>*/}
         </ol>
       </div>
     </div>
@@ -43,28 +43,28 @@ export function GraduateAssistance() {
 
 export function MachineLearningIntern() {
   return (
-    <div class="mb-4 ms-4 bg-white rounded-lg shadow-md p-2">
+    <div class="mb-4 ms-4 bg-white rounded-lg shadow-md p-2 bg-amber-100">
       <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-      <div className="text-sm font-normal text-gray-400 dark:text-gray-500">
+      <div className="text-sm font-normal text-gray-400 ">
         June 2021 - Aug 2021
       </div>
-      <div className="text-xl font-bold text-gray-900 dark:text-white font">
+      <div className="text-xl font-bold text-gray-900 ">
         INDIAN SERVERS
       </div>
-      <div className="text-lg font-semibold text-gray-700 dark:text-white">
+      <div className="text-lg font-semibold text-gray-700 ">
         Machine Learning Intern
       </div>
       <div className="max-w-md mx-auto text-gray-500">
         <ol>
-          <li>
-            ➡️ Designed a scalable microservices architecture using AWS EC2
-            instances and Network Load Balancer(NLB), enabling the system to
-            handle millions of requests per second
-          </li>
-          <li>
-            ➡️ Enhanced model and algorithm performance by 50% through
-            evaluation and implementation of innovative improvements.
-          </li>
+          {/*<li>*/}
+          {/*  ➡️ Designed a scalable microservices architecture using AWS EC2*/}
+          {/*  instances and Network Load Balancer(NLB), enabling the system to*/}
+          {/*  handle millions of requests per second*/}
+          {/*</li>*/}
+          {/*<li>*/}
+          {/*  ➡️ Enhanced model and algorithm performance by 50% through*/}
+          {/*  evaluation and implementation of innovative improvements.*/}
+          {/*</li>*/}
         </ol>
       </div>
     </div>
